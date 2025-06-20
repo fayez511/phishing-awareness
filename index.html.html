@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ تم اختراقك | You Have Been Hacked</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      font-family: 'Tahoma', sans-serif;
+    }
+
+    .card {
+      background-color: #fff;
+      max-width: 900px;
+      margin: 50px auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1;
+      direction: rtl;
+    }
+
+    .column.en {
+      direction: ltr;
+      text-align: left;
+    }
+
+    .logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .warning-title {
+      font-size: 24px;
+      color: #d9534f;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .box {
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .wrong-domain {
+      background-color: #ffe0e0;
+      border: 1px solid #ffaaaa;
+      color: #a94442;
+    }
+
+    .correct-domain {
+      background-color: #e0ffe0;
+      border: 1px solid #aaffaa;
+      color: #3c763d;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Arabic Column -->
+    <div class="column ar">
+      <img src="logo.png" alt="شعار الجهة" class="logo">
+      <div class="warning-title">⚠️ تم اختراقك!</div>
+      <div class="message">
+        لقد قمت بفتح رابط غير آمن وتم خداعك ضمن تجربة محاكاة هجوم إلكتروني.<br>
+        كان من المفترض أن تتحقق من الرابط قبل النقر عليه.
+      </div>
+      <div class="box wrong-domain">
+        <strong>الدومين الذي دخلت عليه (الخاطئ):</strong><br>
+        www.fake-domain.com
+      </div>
+      <div class="box correct-domain">
+        <strong>الدومين الصحيح كان يجب أن يكون:</strong><br>
+        www.official-domain.gov.sa
+      </div>
+      <div class="footer">
+        شكرًا لمشاركتك في هذا التمرين التوعوي. أمن المعلومات مسؤولية الجميع.
+      </div>
+    </div>
+
+    <!-- English Column -->
+    <div class="column en">
+      <img src="logo.png" alt="Organization Logo" class="logo">
+      <div class="warning-title">⚠️ You Have Been Hacked!</div>
+      <div class="message">
+        You have clicked on an unsafe link and successfully fell for a phishing simulation attack.<br>
+        You should always verify links before clicking them.
+      </div>
+      <div class="box wrong-domain">
+        <strong>The link you clicked (fake):</strong><br>
+        www.fake-domain.com
+      </div>
+      <div class="box correct-domain">
+        <strong>The correct link should be:</strong><br>
+        www.official-domain.gov.sa
+      </div>
+      <div class="footer">
+        Thank you for participating in this awareness test. Cybersecurity is everyone's responsibility.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
